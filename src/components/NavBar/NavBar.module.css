@@ -1,0 +1,33 @@
+.navBar {
+  width: 100%;
+  position: fixed;
+}
+.navBar ul {
+  max-width: 500px;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-left: auto;
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.navBar ul li {
+  color: #634545;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  padding: 0.3rem 0.5rem;
+  border-radius: 3px;
+}
+.navBar ul li:hover {
+  cursor: pointer;
+  color: #ffeed6;
+  background-color: rgba(204, 67, 67, 0.5);
+}
+@media (max-width: 500px) {
+  .navBar {
+    display: none;
+  }
+}

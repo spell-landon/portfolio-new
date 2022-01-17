@@ -1,0 +1,27 @@
+.mainContainer {
+  height: 100%;
+}
+.imgContainer {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../../assets/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: -1;
+}
+.textArea {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.textArea h1 {
+  color: #ffeed6;
+  font-size: 48px;
+  font-weight: 400;
+}
+.textArea span {
+  color: #cc4343;
+}
