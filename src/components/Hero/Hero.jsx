@@ -12,6 +12,17 @@ function Hero(props) {
         <h1>
           Landon Spell<span>.</span>
         </h1>
+        <div className={styles.listContainer}>
+          <ul>
+            <li>Projects</li>
+            <hr />
+            <li>About</li>
+            <hr />
+            <li>Contact</li>
+            <hr />
+            <li>Resume</li>
+          </ul>
+        </div>
       </section>
     </div>
   );
