@@ -19,7 +19,9 @@ function NavBar(props) {
         <li>
           <Link to='/about_d'>About</Link>
         </li>
-        <li>Contact</li>
+        <li>
+          <Link to='/contact_d'>Contact</Link>
+        </li>
         <li>Resume</li>
       </ul>
     </div>

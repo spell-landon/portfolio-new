@@ -1,0 +1,122 @@
+/* Only display component if screen is less than 501px */
+@media (max-width: 500px) {
+  .contactContainer {
+    /* display: none; */
+  }
+}
+/* If the component is visible then these are the styles... */
+.contactContainer {
+  height: 100vh;
+  padding: 2rem auto;
+  display: flex;
+  color: white;
+}
+/* "Contact." */
+.contactContainer h1 {
+  height: 100%;
+  text-align: center;
+  padding: 0 1rem;
+  color: #ffeed6;
+  font-size: 48px;
+  font-weight: 200;
+  padding-top: 2rem;
+  writing-mode: vertical-rl;
+  text-orientation: sideways-right;
+  transform: rotate(180deg);
+}
+.contactContainer span {
+  color: #cc4343;
+}
+/* TextArea  */
+.textArea {
+  width: 80vw;
+  height: 80%;
+  margin: auto;
+  display: flex;
+}
+/* Form */
+.textArea form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 0 10rem;
+}
+.textArea form label {
+  color: #ffeed6;
+}
+.textArea form .input,
+.textArea textarea {
+  margin-bottom: 2rem;
+  width: 100%;
+  outline: none;
+  padding: 0.5rem;
+}
+.textArea form .input {
+  background-color: rgba(255, 238, 214, 0.2);
+  border: none;
+  color: white;
+}
+.textArea form .input:focus {
+  background-color: #ffeed6;
+  border: none;
+  color: black;
+}
+.textArea textarea {
+  background-color: #ffeed6;
+}
+.additional {
+  width: 100%;
+}
+.submit {
+  width: fit-content;
+  margin-left: auto;
+  background-color: #6b62cb;
+  padding: 0.3rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 200;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 100;
+}
+.submit:hover {
+  background-color: #5d54c4;
+}
+.submit:active {
+  background-color: #716ac4;
+}
+/* Icons */
+/* Icons */
+.additional {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
+  color: white;
+  width: 50%;
+  max-width: 500px;
+  text-align: center;
+  font-weight: 200;
+}
+.additional ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+.additional ul li .icon {
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.additional ul li .icon:hover {
+  color: #cc4343;
+}

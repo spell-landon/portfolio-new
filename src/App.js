@@ -8,6 +8,7 @@ import ProjectsDesk from './components/Projects/ProjectsDesk';
 import AboutMob from './components/About/AboutMob';
 import AboutDesk from './components/About/AboutDesk';
 import ContactMob from './components/Contact/ContactMob';
+import ContactDesk from './components/Contact/ContactDesk';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path='/about' element={<AboutMob />} />
           <Route path='/about_d' element={<AboutDesk />} />
           <Route path='/contact' element={<ContactMob />} />
+          <Route path='/contact_d' element={<ContactDesk />} />
         </Routes>
       </main>
     </>

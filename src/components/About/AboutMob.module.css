@@ -25,6 +25,7 @@
 }
 .textContainer p {
   color: white;
+  font-family: 'Poppins', sans-serif;
 }
 /* Only display component if screen is less than 501px */
 @media (min-width: 501px) {
