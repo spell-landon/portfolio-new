@@ -9,6 +9,8 @@ import AboutMob from './components/About/AboutMob';
 import AboutDesk from './components/About/AboutDesk';
 import ContactMob from './components/Contact/ContactMob';
 import ContactDesk from './components/Contact/ContactDesk';
+// projects
+import Recipeace from './components/Recipeace/Recipeace';
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
           <Route path='/about_d' element={<AboutDesk />} />
           <Route path='/contact' element={<ContactMob />} />
           <Route path='/contact_d' element={<ContactDesk />} />
+          <Route path='/recipeace' element={<Recipeace />} />
         </Routes>
       </main>
     </>

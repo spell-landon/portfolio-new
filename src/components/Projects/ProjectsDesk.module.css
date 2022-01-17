@@ -29,37 +29,87 @@
 }
 /* Gallery */
 .gallery {
-  height: 80%;
+  height: 85%;
   margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-auto-flow: row;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  overflow-y: scroll;
+}
+.gallery p {
+  color: white;
 }
 .recipeace,
 .jobsearchtracker,
 .flashcards {
-  background-color: rgb(132, 132, 158);
+  /* background-color: rgb(61, 61, 61); */
   margin: 1rem;
-  padding: 1rem;
+  padding: 3rem;
+  max-height: fit-content;
+  max-width: 100%;
+  position: relative;
 }
-.projectsContainer ul {
-  margin: 2rem 1rem;
-  list-style-type: none;
+/* Recipeace */
+.recipeace::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../../assets/recipeace.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.2;
+  transition: all 0.2s ease;
 }
-.projectsContainer ul li {
-  background-color: rgb(131, 131, 131);
-  height: fit-content;
-  color: white;
-  margin: 1rem auto;
-  padding: 1rem;
+.recipeace:hover:before {
+  opacity: 0.7;
 }
-.projectsContainer ul li div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+/* Flash Cards */
+.flashcards::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../../assets/flashcards.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.2;
+  transition: all 0.2s ease;
 }
+.flashcards:hover:before {
+  opacity: 0.7;
+}
+/* Job Search Tracker */
+.jobsearchtracker::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../../assets/jobsearchtracker.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.2;
+  transition: all 0.2s ease;
+}
+.jobsearchtracker:hover:before {
+  opacity: 0.7;
+}
+
 /* Project card title */
 .gallery h2 {
   font-weight: 400;
