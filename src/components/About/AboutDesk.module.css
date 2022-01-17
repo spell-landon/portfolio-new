@@ -1,0 +1,48 @@
+/* Only display component if screen is less than 501px */
+@media (max-width: 500px) {
+  .aboutContainer {
+    /* display: none; */
+  }
+}
+/* If the component is visible then these are the styles... */
+.aboutContainer {
+  height: 100vh;
+  padding: 2rem auto;
+  display: flex;
+  color: white;
+}
+/* "About." */
+.aboutContainer h1 {
+  height: 100%;
+  text-align: center;
+  padding: 0 1rem;
+  color: #ffeed6;
+  font-size: 48px;
+  font-weight: 200;
+  padding-top: 2rem;
+  writing-mode: vertical-rl;
+  text-orientation: sideways-right;
+  transform: rotate(180deg);
+}
+.aboutContainer span {
+  color: #cc4343;
+}
+/* About Paragraph */
+.aboutContainer .textArea {
+    align-self: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textArea img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+.textArea p {
+    padding: 0 3rem;
+}

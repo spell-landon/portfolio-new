@@ -1,0 +1,43 @@
+/* Only display component if screen is less than 501px */
+@media (min-width: 501px) {
+  .projectsContainer {
+    display: none;
+  }
+}
+/* If the component is visible then these are the styles... */
+.projectsContainer {
+  height: 100%;
+  padding: 2rem auto;
+  background-color: #090a0c;
+}
+/* "Projects" */
+.projectsContainer h1 {
+  width: 100%;
+  padding: 0 1rem;
+  color: #634545;
+  font-size: 36px;
+  font-weight: 200;
+  padding-top: 2rem;
+}
+.projectsContainer ul {
+  margin: 2rem 1rem;
+  list-style-type: none;
+}
+.projectsContainer ul li {
+  background-color: rgb(131, 131, 131);
+  height: fit-content;
+  color: white;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+.projectsContainer ul li div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Project card title */
+.projectsContainer ul li div h2 {
+  font-weight: 400;
+  color: #ffeed6;
+}

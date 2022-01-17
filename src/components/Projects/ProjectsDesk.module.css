@@ -1,0 +1,69 @@
+/* Only display component if screen is less than 501px */
+@media (max-width: 500px) {
+  .projectsContainer {
+    /* display: none; */
+  }
+}
+/* If the component is visible then these are the styles... */
+.projectsContainer {
+  height: 100vh;
+  padding: 2rem auto;
+  background-color: #090a0c;
+  display: flex;
+}
+/* "Projects." */
+.projectsContainer h1 {
+  height: 100%;
+  text-align: center;
+  padding: 0 1rem;
+  color: #ffeed6;
+  font-size: 48px;
+  font-weight: 200;
+  padding-top: 2rem;
+  writing-mode: vertical-rl;
+  text-orientation: sideways-right;
+  transform: rotate(180deg);
+}
+.projectsContainer span {
+  color: #cc4343;
+}
+/* Gallery */
+.gallery {
+  height: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-flow: row;
+}
+.recipeace,
+.jobsearchtracker,
+.flashcards {
+  background-color: rgb(132, 132, 158);
+  margin: 1rem;
+  padding: 1rem;
+}
+.projectsContainer ul {
+  margin: 2rem 1rem;
+  list-style-type: none;
+}
+.projectsContainer ul li {
+  background-color: rgb(131, 131, 131);
+  height: fit-content;
+  color: white;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+.projectsContainer ul li div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Project card title */
+.gallery h2 {
+  font-weight: 400;
+  color: #ffeed6;
+  text-align: center;
+  margin-bottom: 1rem;
+}

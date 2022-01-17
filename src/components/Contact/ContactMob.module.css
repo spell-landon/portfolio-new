@@ -1,0 +1,22 @@
+.contactContainer {
+    color: white;
+    height: 100%;
+    padding: 3rem 1rem;
+}
+.textContainer h1{
+  color: #634545;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: right;
+}
+
+
+
+
+
+/* Only display component if screen is less than 501px */
+@media (min-width: 501px) {
+  .aboutContainer {
+    display: none;
+  }
+}

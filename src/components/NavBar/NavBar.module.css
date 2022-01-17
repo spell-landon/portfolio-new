@@ -1,6 +1,22 @@
 .navBar {
   width: 100%;
   position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 1rem;
+  z-index: 1;
+}
+.navBar h1 a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #ffeed6;
+  font-weight: 400;
+  cursor: pointer;
+}
+.navBar span {
+  color: #cc4343;
 }
 .navBar ul {
   max-width: 500px;
@@ -11,17 +27,18 @@
   align-items: flex-end;
   margin-left: auto;
   list-style-type: none;
-  padding: 1rem;
 }
-
-.navBar ul li {
+.navBar ul li a {
+  text-decoration: none;
   color: #634545;
-  background-color: transparent;
   transition: all 0.3s ease;
-  padding: 0.3rem 0.5rem;
   border-radius: 3px;
+  padding: 0.3rem 0.5rem;
 }
-.navBar ul li:hover {
+.navBar ul li {
+  background-color: transparent;
+}
+.navBar ul li a:hover {
   cursor: pointer;
   color: #ffeed6;
   background-color: rgba(204, 67, 67, 0.5);

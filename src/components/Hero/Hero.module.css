@@ -1,6 +1,6 @@
 /* Main Container */
 .mainContainer {
-  height: 100%;
+  height: 100vh;
 }
 /* Set the background image */
 .imgContainer {
@@ -9,12 +9,12 @@
   background-image: url(../../assets/main-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  position: fixed;
+  position: absolute;
   z-index: -1;
 }
 /* Text area */
 .textArea {
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,6 +25,8 @@
   color: #ffeed6;
   font-size: 48px;
   font-weight: 400;
+  margin-top: -15rem;
+  cursor: default;
 }
 /* The period color for Hero title */
 .textArea span {
@@ -42,6 +44,7 @@
   align-items: center;
   width: 75%;
   margin: 0 auto;
+  margin-top: 1rem;
   transition: all 0.2s ease;
 }
 .listContainer > ul li {
@@ -49,7 +52,7 @@
   font-size: 24px;
   color: #634545;
   cursor: pointer;
-  padding: 0.3rem 0.5rem;
+  padding: 0.3rem 0.7rem;
   border-radius: 3px;
   transition: all 0.3s ease;
 }
@@ -60,6 +63,9 @@
 
 /* Only display the ul on Hero if screen is less than 501px */
 @media (min-width: 501px) {
+  .textArea h1 {
+    margin-top: 0rem;
+  }
   .listContainer {
     display: none;
   }
