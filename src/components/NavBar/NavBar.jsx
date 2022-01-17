@@ -22,7 +22,14 @@ function NavBar(props) {
         <li>
           <Link to='/contact_d'>Contact</Link>
         </li>
-        <li>Resume</li>
+        <li>
+          <a
+            href='https://docs.google.com/document/d/1uMVq5JiOIEi_6B2-u-7LSNKSk9APIHIr3sUP7jtlLnA/edit?usp=sharing'
+            target='_blank'
+            rel='noreferrer'>
+            Resume
+          </a>
+        </li>
       </ul>
     </div>
   );

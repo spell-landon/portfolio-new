@@ -27,6 +27,7 @@
   font-weight: 400;
   margin-top: -15rem;
   cursor: default;
+  animation: fadeIn 2s forwards;
 }
 /* The period color for Hero title */
 .textArea span {
@@ -46,8 +47,13 @@
   margin: 0 auto;
   margin-top: 1rem;
   transition: all 0.2s ease;
+  animation: fadeIn 2s forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
 }
-.listContainer > ul li {
+.listContainer > ul li a {
+  display: block;
+  text-decoration: none;
   margin: 1rem 0;
   font-size: 24px;
   color: #634545;
@@ -55,10 +61,20 @@
   padding: 0.3rem 0.7rem;
   border-radius: 3px;
   transition: all 0.3s ease;
+  animation: fadeIn 2s forwards;
+  opacity: 0;
+  animation-delay: 0.4s;
 }
-.listContainer > ul li:hover {
+.listContainer > ul li a:hover {
   color: #ffeed6;
   background-color: rgba(204, 67, 67, 0.5);
+}
+/* Lines */
+.listContainer hr {
+  height: 1px;
+  width: 50%;
+  border: none;
+  border-bottom: 1px solid rgba(99, 69, 69, 0.2);
 }
 
 /* Only display the ul on Hero if screen is less than 501px */
@@ -68,5 +84,14 @@
   }
   .listContainer {
     display: none;
+  }
+}
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
